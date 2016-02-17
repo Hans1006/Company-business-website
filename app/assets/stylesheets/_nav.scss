@@ -1,0 +1,109 @@
+
+// COLOR PALLETE VARIBALES
+$default-green: #0e8441;
+$default-dark-green: #193f1d;
+$default-gray: #231f20;
+$default-blue: rgb(52,73,96);
+$default-yellow: #ffd800;
+$default-white: #ffffff;
+$default-black: #000000;
+$default-orange: rgb(238,154,0);
+// FONT VARIABLE
+
+$font-stack: 'Abel', sans-serif;
+@import "bourbon";
+
+// NESTED NAV STYLING
+nav {
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 150% $font-stack;
+	position: fixed;
+	z-index: 1;
+	margin: 2% 1%;
+  @media only screen and (max-width: 767px) {
+    margin-top: 3%;
+    height: 50px;
+  }
+	ul {
+		list-style: none;
+ 	  background: $default-green;
+  	padding: 2px;
+    width: 100%;
+    text-align: center;
+    font: 100% $font-stack;
+    margin-left: 25%;
+    margin-top: -11%;
+    @media only screen and (max-width: 767px) {
+      margin-left: 18%;
+      margin-top: -13%;
+    }
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        color: $default-white;
+        text-decoration: none;
+        @media only screen and (max-width: 767px) {
+          padding: 5px;
+          font: 70% $font-stack;
+        }
+        &:hover { 
+          background: $default-dark-green; 
+          color: $default-white; 
+          text-decoration: none; 
+        }
+        &.is-selected {
+          background: $default-dark-green; 
+          color: $default-white; 
+        }
+      }
+    }
+  }
+
+.expand {
+    display: block !important; 
+  }
+}
+
+      
+// /*hamburger dropdown menu */
+
+.menu {
+  color: $default-white;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn {
+  span {
+  	display: block;
+  	width: 70px;
+    @media only screen and (max-width: 1024px) {
+        width: 60px;
+    }
+  	height: 9px;
+  	margin: 6px 0;
+  	background: $default-green;
+  	z-index: 99;
+    @media only screen and (max-width: 768px) {
+      width: 40px;
+      height: 6px;
+      margin: 4px 0;
+    }
+    height: 6px;
+    margin: 4px 0;
+  }
+}
+.responsive-menu {
+	position: relative;
+  display: none;
+}
+.mobile-nav {
+	// float: left;
+	// opacity: 0.9;
+}
+
+
+

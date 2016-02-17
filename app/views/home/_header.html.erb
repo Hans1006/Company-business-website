@@ -1,0 +1,18 @@
+<header>
+	<%= link_to image_tag("ATS_Logo.png", id: "logo"), "#home" %>
+	<%= link_to image_tag("stump_contact.png", id: "quick_contact"), "#contact"  %>
+	<nav class="mobile-nav">
+		<div class="menu-btn" id="menu-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="responsive-menu">
+	    	<ul>
+	    		<li><%= link_to "Home", "#home" %></li>
+	    		<li><%= link_to "Services", "#services" %></li>
+	    		<li><%= link_to "About", "#about" %></li>
+			</ul>
+	    </div>
+	</nav>
+</header>

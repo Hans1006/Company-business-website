@@ -1,0 +1,32 @@
+// SET BASE STYLES TO IMAGE CONATINERS
+[class*="bg__"] {
+  height: 50vh;
+
+  text-indent: -9999px;
+
+// FIX, CENTER & SCALE BACKGROUND TO ELEMENT
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+// ADD INSET DROP SHADOW FOR STYLING
+  &:nth-child(2n) {
+    box-shadow: inset 0 0 1em #111;
+  }
+}
+
+// DEFINE PARALLAX SECTIONS
+// .bg__first {
+//   // background-image: url('bark_texture.jpg');
+// }
+.bg__second {
+  background-image: url('tree_trunk.jpg');
+}
+// .bg__third {
+//   background-image: url('orange_bark.jpg');
+// }
+.bg__last {
+  height: 80vh;
+  opacity: 0.8;
+  background-image: url('adam_tree.png');
+}

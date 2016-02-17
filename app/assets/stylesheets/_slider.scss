@@ -1,0 +1,69 @@
+// COLOR PALLETE VARIBALES
+$default-green: #0e8441;
+$default-dark-green: #193f1d;
+$default-gray: #231f20;
+$default-blue: rgb(52,73,96);
+$default-yellow: #ffd800;
+$default-white: #ffffff;
+$default-black: #000000;
+
+// SLIDER SYTLING (NESTED)
+
+#home {
+	// padding-top: 5%;
+}
+.slider {
+	clear: both;
+	position: absolute; 
+    width: 100%; 
+    z-index: auto;
+    // height: 60%;
+    // margin: 0;
+	.container {
+	  // max-width: 100%;
+	  // background-color: $default-black;
+	  // text-align: center;
+	  margin-right: 20%;
+	  width: 100%;
+	  position: absolute;
+	  margin: 0;
+	  padding: 0;
+	  z-index: 0;
+	  div {
+	  background-color: $default-black;
+	  width: 100%;
+	  display: inline-block;
+	  display: none;
+	  position: absolute;
+	  }
+	  img {
+	  width: 100%;
+	  // height: auto;
+	  opacity: 0.75;
+	  height: auto;
+	  }
+	}
+}
+
+// MEDIA QUERY DEFINING SLIDER MARGIN-TOP @ PROGRESSIVE BREAK POINTS
+// .slider {
+//   @media only screen and (max-width: 768px) {
+//     padding-top: 10%;
+//   }
+//   @media only screen and (max-width: 550px) {
+//     padding-top: 15%;
+//   }
+//   @media only screen and (max-width: 500px) {
+//     padding-top: 16%;
+//   }
+//   @media only screen and (max-width: 450px) {
+//     padding-top: 18%;
+//   }
+//   @media only screen and (max-width: 400px) {
+//     padding-top: 20%;
+//   }
+//    @media only screen and (max-width: 350px) {
+//     padding-top: 25%;
+//   }
+
+// }
